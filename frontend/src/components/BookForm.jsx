@@ -39,7 +39,7 @@ const BookForm = () => {
 
   return (
     <div className="bg-white rounded-lg shadow-md p-6 mb-8">
-      <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">Add a New Book</h2>
+      <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center section-title-underline">Add a New Book</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -83,11 +83,7 @@ const BookForm = () => {
         <button 
           type="submit"
           disabled={isSubmitting}
-          className={`w-full py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition duration-200 font-medium ${
-            isSubmitting 
-              ? 'bg-blue-400 text-white cursor-not-allowed' 
-              : 'bg-blue-600 text-white hover:bg-blue-700'
-          }`}
+          className={`add-btn w-full ${isSubmitting ? 'opacity-60 cursor-not-allowed' : ''}`}
         >
           {isSubmitting ? 'Adding Book...' : 'Add Book'}
         </button>

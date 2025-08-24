@@ -39,26 +39,24 @@ const BookList = () => {
 
   return (
     <div>
-      <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Book Collection</h2>
+      <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center section-title-underline">Book Collection</h2>
       <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
         {books.map((book) => (
-          <div key={book._id} className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+          <div key={book._id} className="book-card hover:shadow-xl transition-shadow duration-300 overflow-hidden">
             {/* Book Header */}
-            <div className="bg-gradient-to-r from-blue-500 to-purple-600 text-white p-6">
-              <h3 className="text-xl font-bold mb-2 leading-tight">{book.title}</h3>
-              <p className="text-blue-100 mb-1">by {book.author}</p>
-              <span className="inline-block bg-white bg-opacity-20 rounded-full px-3 py-1 text-sm">
-                {book.genre}
-              </span>
+            <div className="p-4">
+              <h3 className="book-title">{book.title}</h3>
+              <p className="book-meta">by {book.author}</p>
+              <p className="book-meta mt-2">{book.genre}</p>
             </div>
 
             {/* Book Content */}
-            <div className="p-6">
+            <div className="p-4">
               {/* Delete Button */}
               <div className="flex justify-end mb-4">
                 <button 
                   onClick={() => handleDelete(book._id)}
-                  className="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 transition duration-200 text-sm"
+                  className="delete-btn text-sm"
                 >
                   Delete Book
                 </button>

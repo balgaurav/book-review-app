@@ -1,3 +1,78 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Simple UI tweaks requested by user */
+
+/* Background */
+body {
+	background-color: #f9fafb; /* very soft gray */
+}
+
+/* Section headers underline */
+h2, h3 {
+	border-bottom: 2px solid #e5e7eb;
+	padding-bottom: 6px;
+	margin-bottom: 12px;
+}
+
+/* Book card common styles (keeps Tailwind utilities but provides a fallback and consistent look) */
+.book-card {
+	background: #ffffff;
+	padding: 16px;
+	border-radius: 8px;
+	margin-bottom: 20px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.book-title {
+	font-size: 1.25rem; /* ~20px */
+	font-weight: 700;
+	color: #111827;
+}
+
+.book-meta {
+	color: #555555;
+	font-size: 0.9rem;
+}
+
+/* Reviews box */
+.review {
+	background: #f1f5f9;
+	padding: 10px;
+	border-radius: 6px;
+	margin-top: 8px;
+}
+
+/* Button defaults for Add/Delete */
+button.add-btn {
+	background: #2563eb;
+	color: white;
+	border: none;
+	padding: 6px 12px;
+	border-radius: 6px;
+	cursor: pointer;
+}
+button.add-btn:hover {
+	background: #1d4ed8;
+}
+
+button.delete-btn {
+	background: #dc2626;
+	color: white;
+	border: none;
+	padding: 6px 12px;
+	border-radius: 6px;
+	cursor: pointer;
+}
+button.delete-btn:hover {
+	background: #b91c1c;
+}
+
+/* Small utility to ensure consistent h2 spacing when using Tailwind classes in JSX */
+.section-title-underline {
+	border-bottom: 2px solid #e5e7eb;
+	padding-bottom: 4px;
+	margin-bottom: 12px;
+}
+
