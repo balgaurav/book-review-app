@@ -1,5 +1,9 @@
 # Book Review App
 
+## Video Demo
+[Watch a quick video demo of the app here](https://youtu.be/1l92u8y2of4)
+
+
 A simple MERN (MongoDB, Express, React, Node) book review application with a TailwindCSS frontend (Vite).
 
 This README explains how to run the app locally, build for production, and includes project structure, API endpoints, environment variables, and troubleshooting notes (including the Tailwind/PostCSS ESM fix).
@@ -85,7 +89,7 @@ Frontend package scripts (from `frontend/package.json`):
 
 > Note: frontend `package.json` includes "type": "module" so PostCSS config needs to use ESM syntax (see Troubleshooting).
 
-## API Endpoints (observed from `backend/routes`)
+## API Endpoints (from `backend/routes`)
 - `GET /api/books` — returns all books (populates reviews)
 - `POST /api/books` — add a new book (body: `{ title, author, genre }`)
 - `GET /api/books/:id` — get single book with populated reviews
@@ -147,15 +151,3 @@ module.exports = {
 2. Create a feature branch
 3. Run tests / verify locally
 4. Open a pull request with a clear description
-
-## License
-Add a license file or update this section (e.g. MIT).
-
----
-
-If you want, I can:
-- Add this `README.md` to the repository (I just created it),
-- Expand sections with exact copy-ready deploy commands for GitHub Actions or a Vercel setup,
-- Add short run/debug scripts or a `.env.example` file.
-
-Which of these would you like me to do next?
