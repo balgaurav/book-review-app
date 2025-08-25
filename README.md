@@ -142,12 +142,20 @@ module.exports = {
 - CORS: Backend has CORS configured to allow origin `http://localhost:5173`. If you host the frontend elsewhere, update the `cors()` config in `backend/server.js`.
 - Ports: Frontend default 5173 (Vite), backend default 3000 (Express). Ensure they don't conflict with other services.
 
-## Deployment notes
-- Build frontend: `cd frontend && npm run build` and serve `dist/` on static host (Netlify, Vercel, S3, etc.) or serve via backend.
-- Ensure backend is reachable from the deployed frontend and that `MONGO_URI` (production DB) is configured.
-
 ## Contributing
 1. Fork the repo
 2. Create a feature branch
 3. Run tests / verify locally
 4. Open a pull request with a clear description
+<<<<<<< HEAD
+=======
+
+---
+
+If you want, I can:
+- Add this `README.md` to the repository (I just created it),
+- Expand sections with exact copy-ready deploy commands for GitHub Actions or a Vercel setup,
+- Add short run/debug scripts or a `.env.example` file.
+
+Which of these would you like me to do next?
+>>>>>>> 3d6e451bcdcce21a48f3c7b7d9b3cc9bcbb09f71
