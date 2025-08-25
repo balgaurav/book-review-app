@@ -144,9 +144,6 @@ module.exports = {
 3. Run tests / verify locally
 4. Open a pull request with a clear description
 
-## License
-Add a license file or update this section (e.g. MIT).
-
 ---
 
 If you want, I can:
